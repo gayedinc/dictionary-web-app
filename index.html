@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/dictionary.css">
+  <script src="assets/js/dictionary.js" defer></script>
+  <title>Dictionary Web App</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="dictionaryIcon">
+        <img src="assets/img/dictionary-book.svg" alt="Dictionary Book Icon">
+      </div>
+      <div class="headerLeftSide">
+        <div class="fontChoice">
+          <div class="fontStyle">
+            <select name="fontType" class="fontSelect">
+              <option value="Inter">Sans Serif</option>
+              <option value="Lora">Serif</option>
+              <option value="Inconsolata">Mono</option>
+            </select>
+          </div>
+        </div>
+        <div class="lightDarkTheme">
+          <input class="switch" type="checkbox" id="themeChange">
+          <img src="assets/img/icon-half-moon.svg" alt="Moon Icon">
+        </div>
+      </div>
+    </div>
+    <div class="searchArea">
+      <form id="searchForm">
+        <input type="text" class="searchInput" placeholder="Keybord" name="filteredWord">
+      </form>
+    </div>
+    <div class="searchWords"></div>
+    <div class="meaningsArea"></div>
+  </div>
+</body>
+</html>
